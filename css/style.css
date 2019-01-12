@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+:root{
+    --mColor: #E8F5E9;
+    --sColor: #C8E6C9;
+    --mFont: 'Lato', sans-serif;
+}
+*{ box-sizing: border-box; }
+body{     
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    font-family: var(--mFont);
+    font-weight: 900;
+}
+.clearfix{
+    clear: both;
+}
+.header_section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--mColor);
+    padding: 0 50px;
+}
+.header_section h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: var(--mFont);
+    font-weight: 900;
+    flex: 1;
+}
+.header_section .add_form{
+    flex: 2;
+}
+.header_section .add_form .input-field{
+    position: relative;
+    width: 70%;
+}
+.header_section .add_form .input-field input{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-family: var(--mFont);
+    font-weight: 900;
+    color: #707070;
+}
+.header_section .add_form .input-field .add_icon{
+    position: absolute;
+    top: -2.5px;
+    right: -17.5px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--sColor);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.nav_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: calc(100vh - 80px);
+    background-color: var(--sColor);
+    float: left;
+}
+.nav_section a{
+    width: 100%;
+    height: 50px;
+    background-color: var(--mColor);
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    color: #707070;
+}
+.main_section{
+    width: 80%;
+    height: calc(100vh - 80px);
+    float: left;
+}
+.tasks_section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 80px 40px 0;
+}
+.tasks_section > div{
+    width: calc(50% - 20px);
+}
+.tasks_section > div h2{
+    width: 100%;
+    height: 30px;
+    background-color: var(--mColor);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-family: var(--mFont);
+    font-weight: 900;
+    color: #9DA69E;
+}
+.tasks_section .tasks_container{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 50px 0;
+    list-style: none;
+}
+.tasks_section .tasks_container .task{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #9DA69E;
+    padding: 0 20px;
+    margin: 0 0 10px;
+}
+.tasks_section .tasks_container .task .task_text{
+    flex: 1;
+    font-family: var(--mFont);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.tasks_section .tasks_container .task a{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    margin: 0 2px;
+}
+.tasks_section .tasks_container .task .delete i{
+    color: #FF5252;
+}
+.tasks_section .uncomp_tasks .tasks_container .check i,
+.tasks_section .comp_tasks .tasks_container .uncheck i{
+    color: #77AB59;
+}
+/**********************************************/
+.tasks_section{
+    display: flex;
+}
+.faq_container{
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 80px 70px 0;
+    overflow-y: auto;
+    font-family: var(--mFont);
+}
